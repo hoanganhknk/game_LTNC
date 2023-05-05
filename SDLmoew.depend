@@ -1,0 +1,807 @@
+<<<<<<< HEAD
+# depslib dependency file v1.0
+1682959206 source:d:\c++\sdlmoew\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1682538749 d:\c++\sdlmoew\draw.h
+	"enemy.h"
+
+1682957482 source:d:\c++\sdlmoew\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+	"menu.h"
+
+1682957452 d:\c++\sdlmoew\enemy.h
+
+1682959230 source:d:\c++\sdlmoew\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1682957564 d:\c++\sdlmoew\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1682959476 source:d:\c++\sdlmoew\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1682953791 d:\c++\sdlmoew\menu.h
+
+1682956842 source:d:\c++\sdlmoew\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+	"draw.h"
+
+1681316340 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681316340 c:\users\admin\advprog_ay2223\something-master (1)\something-master\draw.h
+	"enemy.h"
+
+1681316340 c:\users\admin\advprog_ay2223\something-master (1)\something-master\enemy.h
+
+1681325038 c:\users\admin\advprog_ay2223\something-master (1)\something-master\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681324932 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+
+1681316340 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681326157 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681325481 c:\users\admin\advprog_ay2223\something-master (1)\something-master\menu.h
+
+1681325516 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+
+1681323464 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\text.cpp
+
+1681316340 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681316340 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\draw.h
+	"enemy.h"
+
+1681329574 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\enemy.h
+
+1681333639 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681324932 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+
+1681334869 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681334988 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\menu.h
+
+1681334712 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681334726 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"gameplay.h"
+
+1681330719 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681584737 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681593307 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\draw.h
+	"enemy.h"
+
+1681576630 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\enemy.h
+
+1681591852 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681593126 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+
+1681593126 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681593257 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681576476 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\menu.h
+
+1681576511 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+
+1681584737 source:c:\users\admin\advprog_ay2223\gameltnc\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681593307 c:\users\admin\advprog_ay2223\gameltnc\draw.h
+	"enemy.h"
+
+1681576630 c:\users\admin\advprog_ay2223\gameltnc\enemy.h
+
+1681591852 c:\users\admin\advprog_ay2223\gameltnc\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681593126 source:c:\users\admin\advprog_ay2223\gameltnc\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+
+1681593126 source:c:\users\admin\advprog_ay2223\gameltnc\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681653997 source:c:\users\admin\advprog_ay2223\gameltnc\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681576476 c:\users\admin\advprog_ay2223\gameltnc\menu.h
+
+1681576511 source:c:\users\admin\advprog_ay2223\gameltnc\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+
+1682439518 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1682507005 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\draw.h
+	"enemy.h"
+
+1682506868 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\enemy.h
+
+1681655466 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1682507407 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+
+1682507122 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1682509387 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681655466 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\menu.h
+
+1681655466 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+
+=======
+# depslib dependency file v1.0
+1682959206 source:d:\c++\sdlmoew\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1682538749 d:\c++\sdlmoew\draw.h
+	"enemy.h"
+
+1682957482 source:d:\c++\sdlmoew\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+	"menu.h"
+
+1682957452 d:\c++\sdlmoew\enemy.h
+
+1682959230 source:d:\c++\sdlmoew\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1682957564 d:\c++\sdlmoew\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1682959476 source:d:\c++\sdlmoew\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1682953791 d:\c++\sdlmoew\menu.h
+
+1682956842 source:d:\c++\sdlmoew\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+	"draw.h"
+
+1681316340 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681316340 c:\users\admin\advprog_ay2223\something-master (1)\something-master\draw.h
+	"enemy.h"
+
+1681316340 c:\users\admin\advprog_ay2223\something-master (1)\something-master\enemy.h
+
+1681325038 c:\users\admin\advprog_ay2223\something-master (1)\something-master\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681324932 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+
+1681316340 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681326157 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681325481 c:\users\admin\advprog_ay2223\something-master (1)\something-master\menu.h
+
+1681325516 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+
+1681323464 source:c:\users\admin\advprog_ay2223\something-master (1)\something-master\text.cpp
+
+1681316340 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681316340 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\draw.h
+	"enemy.h"
+
+1681329574 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\enemy.h
+
+1681333639 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681324932 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+
+1681334869 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681334988 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\menu.h
+
+1681334712 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681334726 source:c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"gameplay.h"
+
+1681330719 c:\users\admin\onedrive\máy tính\firstproject\gameltnc\something-master\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681584737 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681593307 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\draw.h
+	"enemy.h"
+
+1681576630 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\enemy.h
+
+1681591852 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681593126 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+
+1681593126 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681593257 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681576476 c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\menu.h
+
+1681576511 source:c:\users\admin\onedrive\máy tính\gameltnc\gameltnc\gameltnc\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+
+1681584737 source:c:\users\admin\advprog_ay2223\gameltnc\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1681593307 c:\users\admin\advprog_ay2223\gameltnc\draw.h
+	"enemy.h"
+
+1681576630 c:\users\admin\advprog_ay2223\gameltnc\enemy.h
+
+1681591852 c:\users\admin\advprog_ay2223\gameltnc\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1681593126 source:c:\users\admin\advprog_ay2223\gameltnc\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+
+1681593126 source:c:\users\admin\advprog_ay2223\gameltnc\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1681653997 source:c:\users\admin\advprog_ay2223\gameltnc\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681576476 c:\users\admin\advprog_ay2223\gameltnc\menu.h
+
+1681576511 source:c:\users\admin\advprog_ay2223\gameltnc\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+
+1682439518 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	<ctime>
+
+1682507005 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\draw.h
+	"enemy.h"
+
+1682506868 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\enemy.h
+
+1681655466 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1682507407 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+
+1682507122 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1682509387 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1681655466 c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\menu.h
+
+1681655466 source:c:\users\admin\downloads\compressed\game-main\game-main\gameltnc\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+
+>>>>>>> 988f14395bf77f2808985f0f0212804cf2171e8a

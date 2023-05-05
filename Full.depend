@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1683133309 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\boss.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"menu.h"
+	"boss.h"
+
+1683133309 c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\draw.h
+	"enemy.h"
+	"boss.h"
+
+1683133309 c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\enemy.h
+
+1683133309 c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\boss.h
+	"enemy.h"
+
+1683258783 c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\menu.h
+
+1683133309 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\draw.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	<ctime>
+
+1683133309 c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\gameplay.h
+	"draw.h"
+	"enemy.h"
+
+1683133309 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\enemy.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"enemy.h"
+	"draw.h"
+	"menu.h"
+
+1683133309 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\gameplay.cpp
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+
+1683133303 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\icon.rc
+
+1683267717 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\main.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"draw.h"
+	"enemy.h"
+	"gameplay.h"
+	"menu.h"
+	"boss.h"
+	<ctime>
+
+1683267798 source:c:\users\admin\sourcecode\game_ltnc\game_ltnc\code\menu.cpp
+	<bits/stdc++.h>
+	<windows.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	"menu.h"
+	"enemy.h"
+	"draw.h"
+
