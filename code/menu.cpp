@@ -22,19 +22,6 @@ double dame::e_dame =0.5;
 int dame::e_step=1;
 int dame::lv=1;
 int dame::fps=60;
-void printText(SDL_Renderer* renderer,string text,int x, int y,TTF_Font* font,SDL_Color textColor)
-{
-    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(),textColor);
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer,surface);
-    SDL_Rect dest;
-    dest.x = x;
-    dest.y = y;
-    dest.w = 21*text.size();
-    dest.h = 45;
-    SDL_RenderCopy(renderer, texture, NULL, &dest);
-    SDL_DestroyTexture(texture);
- 	SDL_FreeSurface(surface);
-}
 void draw_menu(SDL_Renderer* renderer)
 {
     but_start ={470,280,400,110};
@@ -103,6 +90,70 @@ void option(SDL_Renderer* renderer)
     }
     //cout<<e_dame;
 }
+void printText(SDL_Renderer* renderer,string text,int x, int y,TTF_Font* font,SDL_Color textColor)
+{
+    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(),textColor);
+    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer,surface);
+    SDL_Rect dest;
+    dest.x = x;
+    dest.y = y;
+    dest.w = 21*text.size();
+    dest.h = 45;
+    SDL_RenderCopy(renderer, texture, NULL, &dest);
+    SDL_DestroyTexture(texture);
+ 	SDL_FreeSurface(surface);
+}
+void run_menu(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor)
+{
+
+    int mouseX, mouseY;
+    SDL_Event e;
+    while(1)
+    {
+        SDL_PollEvent(&e);
+        draw_menu(renderer);
+        if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_start.x&&mouseX<=but_start.x+but_start.w&&mouseY>=but_start.y&&mouseY<=but_start.y+but_start.h)
+        {
+            Mix_PlayChannel( -1, gclick, 0 );
+            break;
+        }
+        if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_option.x&&mouseX<=but_option.x+but_option.w&&mouseY>=but_option.y&&mouseY<=but_option.y+but_option.h)
+        {
+            Mix_PlayChannel( -1, gclick, 0 );
+            option(renderer);
+        }
+        if(e.type==SDL_QUIT||(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_quit.x&&mouseX<=but_quit.x+but_quit.w&&mouseY>=but_quit.y&&mouseY<=but_quit.y+but_quit.h))
+        {
+            Mix_PlayChannel( -1, gclick, 0 );
+            exit(0);
+        }
+        if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_info.x&&mouseX<=but_info.x+but_info.w&&mouseY>=but_info.y&&mouseY<=but_info.y+but_info.h)
+        {
+            Mix_PlayChannel( -1, gclick, 0 );
+            SDL_Event e;
+            while(1)
+            {
+                SDL_PollEvent(&e);
+                if(st[SDL_SCANCODE_ESCAPE])
+                    break;
+                if(e.type==SDL_QUIT)
+                    exit(0);
+                SDL_RenderCopy(renderer,bg,NULL,NULL);
+                SDL_RenderCopy(renderer,blur,NULL,NULL);
+                SDL_RenderCopy(renderer,info,NULL,&option_pic);
+                SDL_RenderPresent(renderer);
+                SDL_RenderClear(renderer);
+                SDL_Delay(10);
+            }
+        }
+        if(e.type == SDL_MOUSEMOTION)
+        {
+            mouseX = e.button.x;
+            mouseY = e.button.y;
+        }
+    }
+    //cout<<e_dame;
+}
 void pause(SDL_Renderer* renderer,int &nani)
 {
     int mouseX, mouseY;
@@ -163,57 +214,6 @@ void pause(SDL_Renderer* renderer,int &nani)
         SDL_Delay(5);
     }
 
-}
-void run_menu(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor)
-{
-
-    int mouseX, mouseY;
-    SDL_Event e;
-    while(1)
-    {
-        SDL_PollEvent(&e);
-        draw_menu(renderer);
-        if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_start.x&&mouseX<=but_start.x+but_start.w&&mouseY>=but_start.y&&mouseY<=but_start.y+but_start.h)
-        {
-            Mix_PlayChannel( -1, gclick, 0 );
-            break;
-        }
-        if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_option.x&&mouseX<=but_option.x+but_option.w&&mouseY>=but_option.y&&mouseY<=but_option.y+but_option.h)
-        {
-            Mix_PlayChannel( -1, gclick, 0 );
-            option(renderer);
-        }
-        if(e.type==SDL_QUIT||(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_quit.x&&mouseX<=but_quit.x+but_quit.w&&mouseY>=but_quit.y&&mouseY<=but_quit.y+but_quit.h))
-        {
-            Mix_PlayChannel( -1, gclick, 0 );
-            exit(0);
-        }
-        if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_info.x&&mouseX<=but_info.x+but_info.w&&mouseY>=but_info.y&&mouseY<=but_info.y+but_info.h)
-        {
-            Mix_PlayChannel( -1, gclick, 0 );
-            SDL_Event e;
-            while(1)
-            {
-                SDL_PollEvent(&e);
-                if(st[SDL_SCANCODE_ESCAPE])
-                    break;
-                if(e.type==SDL_QUIT)
-                    exit(0);
-                SDL_RenderCopy(renderer,bg,NULL,NULL);
-                SDL_RenderCopy(renderer,blur,NULL,NULL);
-                SDL_RenderCopy(renderer,info,NULL,&option_pic);
-                SDL_RenderPresent(renderer);
-                SDL_RenderClear(renderer);
-                SDL_Delay(10);
-            }
-        }
-        if(e.type == SDL_MOUSEMOTION)
-        {
-            mouseX = e.button.x;
-            mouseY = e.button.y;
-        }
-    }
-    //cout<<e_dame;
 }
 void draw_time(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor, Uint32 frametime)
 {

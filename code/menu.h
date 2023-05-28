@@ -9,9 +9,9 @@ void printText(SDL_Renderer* renderer,std::string text,int x, int y,TTF_Font* fo
 class dame
 {
 public:
-    static double e_dame;
-    static int e_step;
-    static int lv;
+    static double e_damage;
+    static int e_move;
+    static int e_lv;
     static int fps;
 };
 #endif menu_h_h;
