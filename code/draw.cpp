@@ -35,21 +35,21 @@ void draw::nextframe()
         cc_rect.y=0;
     }
 }
-void draw::left(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
+void draw::left(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
-        if(slime.check[i])
+        if(slime_monster.check[i])
         {
-            slime.printf[i].x+=step;
+            slime_monster.printf[i].x+=step;
         }
-        if(ghost.check[i])
+        if(ghost_monster.check[i])
         {
-            ghost.printf[i].x+=step;
+            ghost_monster.printf[i].x+=step;
         }
-        if(ghost2.check[i])
+        if(ghost_monster2.check[i])
         {
-            ghost2.printf[i].x+=step;
+            ghost_monster2.printf[i].x+=step;
         }
     }
     if(dame::lv==3)
@@ -62,21 +62,21 @@ void draw::left(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
         nextframe();
     }
 }
-void draw::right(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
+void draw::right(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
-        if(slime.check[i])
+        if(slime_monster.check[i])
         {
-            slime.printf[i].x-=step;
+            slime_monster.printf[i].x-=step;
         }
-        if(ghost.check[i])
+        if(ghost_monster.check[i])
         {
-            ghost.printf[i].x-=step;
+            ghost_monster.printf[i].x-=step;
         }
-        if(ghost2.check[i])
+        if(ghost_monster2.check[i])
         {
-            ghost2.printf[i].x-=step;
+            ghost_monster2.printf[i].x-=step;
         }
     }
     if(dame::lv==3)
@@ -89,21 +89,21 @@ void draw::right(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
         nextframe();
     }
 }
-void draw::up(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
+void draw::up(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
-        if(slime.check[i])
+        if(slime_monster.check[i])
         {
-            slime.printf[i].y+=step;
+            slime_monster.printf[i].y+=step;
         }
-        if(ghost.check[i])
+        if(ghost_monster.check[i])
         {
-            ghost.printf[i].y+=step;
+            ghost_monster.printf[i].y+=step;
         }
-        if(ghost2.check[i])
+        if(ghost_monster2.check[i])
         {
-            ghost2.printf[i].y+=step;
+            ghost_monster2.printf[i].y+=step;
         }
     }
     if(dame::lv==3)
@@ -116,21 +116,21 @@ void draw::up(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
         nextframe();
     }
 }
-void draw::down(enemy &slime, enemy &ghost, enemy &ghost2,BOSS &boss1)
+void draw::down(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
-        if(slime.check[i])
+        if(slime_monster.check[i])
         {
-            slime.printf[i].y-=step;
+            slime_monster.printf[i].y-=step;
         }
-        if(ghost.check[i])
+        if(ghost_monster.check[i])
         {
-            ghost.printf[i].y-=step;
+            ghost_monster.printf[i].y-=step;
         }
-        if(ghost2.check[i])
+        if(ghost_monster2.check[i])
         {
-            ghost2.printf[i].y-=step;
+            ghost_monster2.printf[i].y-=step;
         }
     }
     if(dame::lv==3)

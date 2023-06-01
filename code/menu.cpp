@@ -8,7 +8,7 @@
 #include "enemy.h"
 #include "draw.h"
 using namespace std;
-SDL_Texture* bg=NULL;
+SDL_Texture* backgound=NULL;
 SDL_Texture* op=NULL;
 SDL_Texture* pau=NULL;
 SDL_Texture* info=NULL;
@@ -16,10 +16,10 @@ SDL_Texture* blur=NULL;
 Mix_Chunk* gclick= NULL;
 SDL_Rect but_start,but_option,but_quit,but_info,option_pic,but_easy,but_medium,but_hard,but_info2;
 const Uint8* st = SDL_GetKeyboardState(NULL);
-string text= "I've Been Killing Monster";
-string text2= "for 300 Years";
-double dame::e_dame =0.5;
-int dame::e_step=1;
+string text_game= "I've Been Killing Monster";
+string text_game2= "for 300 Years";
+double dame::dame =0.5;
+int dame::step=1;
 int dame::lv=1;
 int dame::fps=60;
 void draw_menu(SDL_Renderer* renderer)
@@ -33,13 +33,13 @@ void draw_menu(SDL_Renderer* renderer)
     but_medium ={510,320,300,95};
     but_hard = {510,455,300,95};
     but_info2 ={950,570,45,45};
-    bg=IMG_LoadTexture(renderer,"image/menu.png");
+    backgound=IMG_LoadTexture(renderer,"image/menu.png");
     op=IMG_LoadTexture(renderer,"image/option.png");
     pau=IMG_LoadTexture(renderer,"image/pause.png");
     info = IMG_LoadTexture(renderer,"image/info.png");
     blur = IMG_LoadTexture(renderer,"image/blur.png");
     gclick= Mix_LoadWAV("sound/click.wav");
-    SDL_RenderCopy(renderer,bg,NULL,NULL);
+    SDL_RenderCopy(renderer,backgound,NULL,NULL);
     SDL_RenderPresent(renderer);
 }
 void option(SDL_Renderer* renderer)
@@ -48,31 +48,31 @@ void option(SDL_Renderer* renderer)
     SDL_Event e;
     while(1)
     {
-        SDL_RenderCopy(renderer,bg,NULL,NULL);
+        SDL_RenderCopy(renderer,backgound,NULL,NULL);
         SDL_RenderCopy(renderer,blur,NULL,NULL);
         SDL_RenderCopy(renderer,op,NULL,&option_pic);
         SDL_RenderPresent(renderer);
         SDL_PollEvent(&e);
         if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_easy.x&&mouseX<=but_easy.x+but_easy.w&&mouseY>=but_easy.y&&mouseY<=but_easy.y+but_easy.h)
         {
-            dame::e_dame=0.5;
-            dame::e_step=1;
+            dame::dame=0.5;
+            dame::step=1;
             dame::lv=1;
             Mix_PlayChannel( -1, gclick, 0 );
             break;
         }
         if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_medium.x&&mouseX<=but_medium.x+but_medium.w&&mouseY>=but_medium.y&&mouseY<=but_medium.y+but_medium.h)
         {
-            dame::e_dame=1;
-            dame::e_step=1;
+            dame::dame=1;
+            dame::step=1;
             dame::lv=2;
             Mix_PlayChannel( -1, gclick, 0 );
             break;
         }
         if(e.type == SDL_MOUSEBUTTONDOWN&&mouseX>=but_hard.x&&mouseX<=but_hard.x+but_hard.w&&mouseY>=but_hard.y&&mouseY<=but_hard.y+but_hard.h)
         {
-            dame::e_dame=1.5;
-            dame::e_step=2;
+            dame::dame=1.5;
+            dame::step=2;
             dame::lv=3;
             Mix_PlayChannel( -1, gclick, 0 );
             cout<<"hard";
@@ -88,22 +88,22 @@ void option(SDL_Renderer* renderer)
         SDL_RenderClear(renderer);
         SDL_Delay(5);
     }
-    //cout<<e_dame;
+    //cout<<dame;
 }
-void printText(SDL_Renderer* renderer,string text,int x, int y,TTF_Font* font,SDL_Color textColor)
+void printtext_game(SDL_Renderer* renderer,string text_game,int x, int y,TTF_Font* font,SDL_Color text_gameColor)
 {
-    SDL_Surface* surface = TTF_RenderText_Solid(font, text.c_str(),textColor);
-    SDL_Texture* texture = SDL_CreateTextureFromSurface(renderer,surface);
+    SDL_Surface* surface = TTF_Rendertext_Solid(font, text_game.c_str(),text_gameColor);
+    SDL_texture* texture = SDL_CreateTextureFromSurface(renderer,surface);
     SDL_Rect dest;
     dest.x = x;
     dest.y = y;
-    dest.w = 21*text.size();
+    dest.w = 21*text_game.size();
     dest.h = 45;
     SDL_RenderCopy(renderer, texture, NULL, &dest);
     SDL_DestroyTexture(texture);
  	SDL_FreeSurface(surface);
 }
-void run_menu(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor)
+void run_menu(SDL_Renderer* renderer,TTF_Font* font,SDL_Color text_gameColor)
 {
 
     int mouseX, mouseY;
@@ -138,7 +138,7 @@ void run_menu(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor)
                     break;
                 if(e.type==SDL_QUIT)
                     exit(0);
-                SDL_RenderCopy(renderer,bg,NULL,NULL);
+                SDL_RenderCopy(renderer,backgound,NULL,NULL);
                 SDL_RenderCopy(renderer,blur,NULL,NULL);
                 SDL_RenderCopy(renderer,info,NULL,&option_pic);
                 SDL_RenderPresent(renderer);
@@ -152,7 +152,7 @@ void run_menu(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor)
             mouseY = e.button.y;
         }
     }
-    //cout<<e_dame;
+    //cout<<dame;
 }
 void pause(SDL_Renderer* renderer,int &nani)
 {
@@ -215,10 +215,10 @@ void pause(SDL_Renderer* renderer,int &nani)
     }
 
 }
-void draw_time(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor, Uint32 frametime)
+void draw_time(SDL_Renderer* renderer,TTF_Font* font,SDL_Color text_gameColor, Uint32 frametime)
 {
     // Set time clock
-    string text4 = "Time : ";
+    string text_game4 = "Time : ";
     int seconds, minutes;
     seconds = int(frametime)/1000;
     minutes = seconds/60;
@@ -227,31 +227,31 @@ void draw_time(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor, Uint32
     string str_seconds = to_string(seconds);
     if(minutes < 10){
         if(seconds < 10){
-            text4 = text4 +"0"+ str_minutes +":"+ "0" +str_seconds;
+            text_game4 = text_game4 +"0"+ str_minutes +":"+ "0" +str_seconds;
         }
         else{
-            text4 = text4 +"0"+ str_minutes +":"+ str_seconds;
+            text_game4 = text_game4 +"0"+ str_minutes +":"+ str_seconds;
         }
     }
     else{
         if(seconds < 10){
-            text4 = text4 + str_minutes +":"+ "0" +str_seconds;
+            text_game4 = text_game4 + str_minutes +":"+ "0" +str_seconds;
         }
         else{
-            text4 = text4 + str_minutes +":"+ str_seconds;
+            text_game4 = text_game4 + str_minutes +":"+ str_seconds;
         }
     }
-    printText(renderer,text4,600,0,font,textColor);
+    printtext_game(renderer,text_game4,600,0,font,text_gameColor);
 //    SDL_RenderPresent(renderer);
 }
-void draw_score(SDL_Renderer* renderer,TTF_Font* font,SDL_Color textColor, int score)
+void draw_score(SDL_Renderer* renderer,TTF_Font* font,SDL_Color text_gameColor, int score)
 {
     // Set score:
-    string text3 = "SCORE : ";
+    string text_game3 = "SCORE : ";
     string temp = to_string(score);
 
-    text3 = text3 + temp;
+    text_game3 = text_game3 + temp;
 
-    printText(renderer,text3,0,0,font,textColor);
+    printtext_game(renderer,text_game3,0,0,font,text_gameColor);
     //SDL_RenderPresent(renderer);
 }

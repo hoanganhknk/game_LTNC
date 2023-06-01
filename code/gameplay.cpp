@@ -5,25 +5,25 @@
 #include <SDL_mixer.h>
 #include "draw.h"
 #include "enemy.h"
-#include "gameplay.h"
+#include "game_characterplay.h"
 using namespace std;
 const Uint8* state = SDL_GetKeyboardState(NULL);
-void thanks_mau(SDL_Renderer* renderer,draw &game, SDL_Rect &mau,SDL_Rect &thanh_mau)
+void thanks_mau(SDL_Renderer* renderer,draw &game_character, SDL_Rect &mau,SDL_Rect &thanh_mau)
 {
-    if(game.movex > 0){
-        mau.x=game.print.x+6;
-        thanh_mau.x=game.print.x+5;
+    if(game_character.movex > 0){
+        mau.x=game_character.print.x+6;
+        thanh_mau.x=game_character.print.x+5;
     }
     else{
-        mau.x=game.print.x+19;
-        thanh_mau.x=game.print.x+18;
+        mau.x=game_character.print.x+19;
+        thanh_mau.x=game_character.print.x+18;
     }
-    mau.y=game.print.y+game.print.h-29;
+    mau.y=game_character.print.y+game_character.print.h-29;
     mau.h=4;
-    mau.w=(double)(game.print.w*game.health)/50.0-30;
+    mau.w=(double)(game_character.print.w*game_character.health)/50.0-30;
     thanh_mau.h=6;
-    thanh_mau.y=game.print.y+game.print.h-30;
-    thanh_mau.w=game.print.w-28;
+    thanh_mau.y=game_character.print.y+game_character.print.h-30;
+    thanh_mau.w=game_character.print.w-28;
     if(mau.w<0){
         mau.w = 0;
     }
@@ -78,55 +78,55 @@ void destroy(draw &nv,enemy &slime)
         }
     }
 }
-void sword(enemy &slime, draw &game)
+void sword(enemy &slime, draw &game_character)
 {
-    game.action =1;
-    game.cc_rect.x=0;
-    destroy(game,slime);
+    game_character.action =1;
+    game_character.cc_rect.x=0;
+    destroy(game_character,slime);
 }
-void charmove(SDL_Event e, draw &game,int &sword_time,enemy &slime,enemy &ghost, enemy &ghost2,BOSS &boss1)
+void charmove(SDL_Event e, draw &game_character,int &sword_time,enemy &slime,enemy &ghost, enemy &ghost2,BOSS &boss1)
 {
     SDL_PollEvent(&e);
-    if(game.action)
+    if(game_character.action)
     {
-        game.nextframe();
+        game_character.nextframe();
         return ;
     }
     if(sword_time<clock()-300)
         if(e.type==SDL_MOUSEBUTTONDOWN||state[SDL_SCANCODE_SPACE])
         {
             sword_time=clock();
-            sword(slime,game);
-            sword(ghost,game);
-            sword(ghost2,game);
+            sword(slime,game_character);
+            sword(ghost,game_character);
+            sword(ghost2,game_character);
         }
     if(state[SDL_SCANCODE_ESCAPE])
     {
-        game.play=2;
+        game_character.play=2;
         }
     if(state[SDL_SCANCODE_ESCAPE])
     {
-        game.play=2;
+        game_character.play=2;
     }
     if (state[SDL_SCANCODE_LEFT]||state[SDL_SCANCODE_A])
     {
 
-            game.left(slime,ghost,ghost2,boss1);
+            game_character.left(slime,ghost,ghost2,boss1);
     }
     if (state[SDL_SCANCODE_RIGHT]||state[SDL_SCANCODE_D])
     {
-        game.right(slime,ghost,ghost2,boss1);
+        game_character.right(slime,ghost,ghost2,boss1);
     }
     if (state[SDL_SCANCODE_UP]||state[SDL_SCANCODE_W])
     {
-        game.up(slime, ghost,ghost2,boss1);
+        game_character.up(slime, ghost,ghost2,boss1);
     }
     if (state[SDL_SCANCODE_DOWN]||state[SDL_SCANCODE_S])
     {
-       game.down(slime,ghost,ghost2,boss1);
+       game_character.down(slime,ghost,ghost2,boss1);
     }
     if (state[SDL_SCANCODE_N])
-        game.score+=20;
+        game_character.score+=20;
     if(SDL_PollEvent(&e))
         if(e.type==SDL_QUIT)
             exit(0);

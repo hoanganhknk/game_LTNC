@@ -17,18 +17,18 @@ void BOSS::emove(SDL_Rect print,double &health)
     print.y+=print.h/2;
     if(collision(boss_rect,rect)&&boss_health>0)
     {
-        health-=dame::e_dame*2;
+        health-=dame::damage*2;
         attack=1;
         return;
     }
     if(boss_rect.y>print.y)
-        boss_rect.y-=dame::e_step-1;
+        boss_rect.y-=dame::step-1;
     else if(boss_rect.y<print.y)
-        boss_rect.y+=dame::e_step-1;
+        boss_rect.y+=dame::step-1;
     if(boss_rect.x>print.x)
-        boss_rect.x-=dame::e_step-1;
+        boss_rect.x-=dame::step-1;
     else
-        boss_rect.x+=dame::e_step-1;
+        boss_rect.x+=dame::step-1;
 }
 void BOSS::reset()
 {

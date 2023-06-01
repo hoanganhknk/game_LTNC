@@ -50,7 +50,7 @@ void enemy::emove(SDL_Rect print,double &health)
     {
         if(collision(printf[i],rect)&&check[i])
         {
-            health-=dame::e_dame;
+            health-=dame::damage;
             attack=1;
             continue;
         }
