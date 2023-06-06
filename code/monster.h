@@ -1,9 +1,9 @@
-#ifndef enemy_h_
-#define enemy_h_
+#ifndef quaivat_h_
+#define quaivat_h_
 static const int e_num=3000;
 static int time_spawn =2000;
 static int e_w=672,e_h=32;
-class enemy
+class quaivat
 {
 public :
     void spawn(SDL_Rect print,int i);
@@ -16,5 +16,4 @@ public :
     int attack=0;
     bool collision (SDL_Rect a,SDL_Rect b);
 };
-#endif enemy_h_h;
-
+#endif quaivat_h_h;

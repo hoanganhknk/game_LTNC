@@ -3,11 +3,11 @@
 #include <SDL_image.h>
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
-#include "enemy.h"
+#include "quaivat.h"
 #include "draw.h"
 #include "menu.h"
 using namespace std;
-void enemy::spawn(SDL_Rect print,int i)
+void quaivat::spawn(SDL_Rect print,int i)
 {
     printf[i]= {0,0,30,30};
     int x2=0,y2=0;
@@ -37,7 +37,7 @@ void enemy::spawn(SDL_Rect print,int i)
     }
     check[i]=e_health;
 }
-void enemy::emove(SDL_Rect print,double &health)
+void quaivat::emove(SDL_Rect print,double &health)
 {
     SDL_Rect rect =print;
     rect.x+=30;
@@ -117,7 +117,7 @@ void enemy::emove(SDL_Rect print,double &health)
         }
     }
 }
-bool enemy::collision (SDL_Rect a,SDL_Rect b)
+bool quaivat::collision (SDL_Rect a,SDL_Rect b)
 {
 
     if(a.x>=b.x&&a.x<=b.x+b.w&&a.y>=b.y&&a.y<=b.y+b.h)
@@ -130,7 +130,7 @@ bool enemy::collision (SDL_Rect a,SDL_Rect b)
         return 1;
     return 0;
 }
-void enemy::reset()
+void quaivat::reset()
 {
     num=0;
     for(int i=0; i<=e_num; i++)

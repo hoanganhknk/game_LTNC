@@ -5,7 +5,7 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 #include "draw.h"
-#include "enemy.h"
+#include "quaivat.h"
 #include "game_characterplay.h"
 #include "menu.h"
 #include "boss.h"
@@ -27,9 +27,9 @@ SDL_Color textColor = {255, 255, 255};
 int frametime;
 int spawn_num;
 draw game_character;
-enemy slime;
-enemy ghost;
-enemy ghost2;
+quaivat slime;
+quaivat ghost;
+quaivat ghost2;
 BOSS boss1;
 Uint32 gamestart = SDL_GetTicks();
 int cnt_time, sword_time,spawn_time;
@@ -50,7 +50,7 @@ bool init()
     sword_sound = Mix_LoadWAV("sound/sword_sound.wav");
     return success;
 }
-void spawn_enemy(enemy &slime, enemy &ghost, enemy &ghost2)
+void spawn_quaivat(quaivat &slime, quaivat &ghost, quaivat &ghost2)
 {
     if(spawn_time+time_spawn<=clock())
     {
@@ -83,7 +83,7 @@ void spawn_enemy(enemy &slime, enemy &ghost, enemy &ghost2)
     }
 }
 
-void draw_enemy()
+void draw_quaivat()
 {
     for(int i=0; i<slime.num; i++)
     {
@@ -101,7 +101,7 @@ void end_game()
         SDL_SetRenderDrawColor(renderer,240, 189, 199, 1 );
         SDL_RenderFillRect(renderer,NULL);
         printText(renderer,"YOU LOSE",580,250,font,textColor);
-        draw_enemy();
+        draw_quaivat();
         if(game_character.movex>0)
             SDL_RenderCopy(renderer, character, &game_character.cc_rect,&game_character.print);
         else
@@ -144,8 +144,8 @@ void render()
         SDL_RenderCopy(renderer, character, &game_character.cc_rect,&game_character.print);
     else
         SDL_RenderCopyEx(renderer,character, &game_character.cc_rect, &game_character.print, 0, NULL, SDL_FLIP_HORIZONTAL);
-    spawn_enemy(slime,ghost,ghost2);
-    draw_enemy();
+    spawn_quaivat(slime,ghost,ghost2);
+    draw_quaivat();
     thanks_mau(renderer, game_character, mau, thanh_mau);
     draw_score(renderer, font, textColor, game_character.score);
     draw_time(renderer,font,textColor,frametime);

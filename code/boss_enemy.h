@@ -1,7 +1,7 @@
 #ifndef boss_h_
 #define boss_h_
-#include "enemy.h"
-class BOSS: public enemy
+#include "quaivat.h"
+class BOSS: public quaivat
 {
 public :
     SDL_Rect boss_rect={400,300,132,88};

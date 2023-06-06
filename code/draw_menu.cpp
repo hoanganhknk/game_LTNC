@@ -5,7 +5,7 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 #include "menu.h"
-#include "enemy.h"
+#include "quaivat.h"
 #include "draw.h"
 using namespace std;
 SDL_Texture* backgound=NULL;

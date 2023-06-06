@@ -5,7 +5,7 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 #include "draw.h"
-#include "enemy.h"
+#include "quaivat.h"
 #include "gameplay.h"
 #include "menu.h"
 #include <ctime>
@@ -35,7 +35,7 @@ void draw::nextframe()
         cc_rect.y=0;
     }
 }
-void draw::left(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
+void draw::left(quaivat &slime_monster, quaivat &ghost_monster, quaivat &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
@@ -62,7 +62,7 @@ void draw::left(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster
         nextframe();
     }
 }
-void draw::right(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
+void draw::right(quaivat &slime_monster, quaivat &ghost_monster, quaivat &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
@@ -89,7 +89,7 @@ void draw::right(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monste
         nextframe();
     }
 }
-void draw::up(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
+void draw::up(quaivat &slime_monster, quaivat &ghost_monster, quaivat &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {
@@ -116,7 +116,7 @@ void draw::up(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,
         nextframe();
     }
 }
-void draw::down(enemy &slime_monster, enemy &ghost_monster, enemy &ghost_monster2,BOSS &boss1)
+void draw::down(quaivat &slime_monster, quaivat &ghost_monster, quaivat &ghost_monster2,BOSS &boss1)
 {
     for(int i=0;i<=e_num;i++)
     {

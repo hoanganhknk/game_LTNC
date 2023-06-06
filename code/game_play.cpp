@@ -4,7 +4,7 @@
 #include <SDL_ttf.h>
 #include <SDL_mixer.h>
 #include "draw.h"
-#include "enemy.h"
+#include "quaivat.h"
 #include "game_characterplay.h"
 using namespace std;
 const Uint8* state = SDL_GetKeyboardState(NULL);
@@ -34,7 +34,7 @@ void thanks_mau(SDL_Renderer* renderer,draw &game_character, SDL_Rect &mau,SDL_R
     //cout<<thanh_mau.h<<" "<<thanh_mau.w<<" "<<thanh_mau.x<<" "<<thanh_mau.y<<endl;
     SDL_SetRenderDrawColor(renderer,0,0,0,0);
 }
-void destroy(draw &nv,enemy &slime)
+void destroy(draw &nv,quaivat &slime)
 {
     int x_mid=nv.print.x;
     int y_mid=nv.print.y;
@@ -78,13 +78,13 @@ void destroy(draw &nv,enemy &slime)
         }
     }
 }
-void sword(enemy &slime, draw &game_character)
+void sword(quaivat &slime, draw &game_character)
 {
     game_character.action =1;
     game_character.cc_rect.x=0;
     destroy(game_character,slime);
 }
-void charmove(SDL_Event e, draw &game_character,int &sword_time,enemy &slime,enemy &ghost, enemy &ghost2,BOSS &boss1)
+void charmove(SDL_Event e, draw &game_character,int &sword_time,quaivat &slime,quaivat &ghost, quaivat &ghost2,BOSS &boss1)
 {
     SDL_PollEvent(&e);
     if(game_character.action)
